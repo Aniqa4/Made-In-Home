@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 function Layout() {
     return (
-        <div>
+        <div className=' text-zinc-700'>
             <Navbar />
             <Outlet />
             <Footer />
