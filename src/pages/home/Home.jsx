@@ -1,10 +1,11 @@
 import React from 'react'
-import HeroSection from './HeroSection'
-import Main from './Main'
+import HeroSection from './sections/HeroSection'
+import Main from './sections/Main'
+
 
 function Home() {
   return (
-    <div className='container mx-auto'>
+    <div>
         <HeroSection/>
         <Main/>
     </div>

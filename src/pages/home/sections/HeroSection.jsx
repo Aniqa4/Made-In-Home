@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div className='py-10'>
+    <div>
       <p className=' bg-purple-50 p-5 text-center'>
         Discover a world of convenience at our versatile online tool hub.
         From creating to-do lists and quick calculations to managing time
