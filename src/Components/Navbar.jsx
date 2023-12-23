@@ -8,14 +8,14 @@ function Navbar() {
             <div className='container mx-auto'>
                 <ul className='flex justify-between items-center'>
                     <li className='text-xl text-black'>
-                        <Link href='/'>Tools</Link>
+                        <Link to='/'>Tools</Link>
                     </li>
                     <ul className='flex gap-10 items-center'>
                         <li className='text-xl relative flex'>
                             <FcTodoList />
                             <span className=' absolute -top-3 -right-2 text-sm'>0</span>
                         </li>
-                        <li>Login/Register</li>
+                        <li><Link to='/login'>Login/Register</Link></li>
                     </ul>
                 </ul>
             </div>

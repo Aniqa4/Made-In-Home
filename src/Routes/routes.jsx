@@ -3,6 +3,7 @@ import Home from "../pages/home/Home";
 import Layout from "../layout/Layout";
 import Calculator from "../pages/calculator/Calculator";
 import ToDo from "../pages/toDo/ToDo";
+import Login from "../pages/login/Login";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/to-do',
                 element: <ToDo />
+            },
+            {
+                path: '/login',
+                element: <Login />
             }
         ]
     }
