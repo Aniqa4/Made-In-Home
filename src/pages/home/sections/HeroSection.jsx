@@ -6,7 +6,7 @@ function HeroSection() {
       <img src={`${import.meta.env.VITE_Banner_Image}`}
         alt="banner"
         className='w-full opacity-70' />
-      <p className=' absolute top-1/3 px-20 text-center text-xl text-black'>
+      <p className=' absolute top-1/3 px-20 text-center text-xl text-black font-semibold'>
         Welcome to MadeInHome, your haven for all things handmade and heartcrafted.
         Explore a world of creativity within the comfort of your home, where we share
         inspiring ideas and practical tips on cooking, crafting, painting, sewing,

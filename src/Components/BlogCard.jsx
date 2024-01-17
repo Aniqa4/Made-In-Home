@@ -1,0 +1,33 @@
+import React from 'react'
+import { useState } from 'react'
+
+function BlogCard() {
+    const [show, setShow] = useState(false)
+    return (
+        <div className='w-56'>
+            <div className='relative'
+                onMouseMove={() => setShow(true)}
+                onMouseLeave={() => setShow(false)}>
+                <img src="https://assets.bonappetit.com/photos/5e7a6c79edf206000862e452/1:1/w_1519,h_1519,c_limit/Cooking-Home-Collection.jpg"
+                    alt="blogTitle"
+                    className={show ? 'opacity-70 w-56 rounded-xl' : ' w-56 rounded-xl'} />
+                {
+                    show &&
+                    <div className='absolute top-[40%] right-[33%]'>
+                        <button className='text-center rounded px-3 py-1
+                         text-white bg-[#1c1b1b]'>Read
+                        </button>
+                    </div>
+                }
+            </div>
+            <div className='grid grid-cols-1 gap-2 pt-5'>
+                <h1>Blog Title</h1>
+                <p>Posted By : User Name</p>
+                <p>Category : Cooking</p>
+                <p className='bg-[#1c1b1b] text-white text-center rounded py-1'>Read</p>
+            </div>
+        </div>
+    )
+}
+
+export default BlogCard

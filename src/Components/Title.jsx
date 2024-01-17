@@ -2,7 +2,7 @@ import React from 'react'
 
 function Title({title}) {
   return (
-    <div className='text-center uppercase font-semibold pb-10'>{title}</div>
+    <div className=' font-semibold py-10 text-xl'>{title}</div>
   )
 }
 
