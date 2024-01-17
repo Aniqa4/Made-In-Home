@@ -1,9 +1,8 @@
 import React from 'react'
-import '../Styles/Styles.css'
 
 function Footer() {
   return (
-    <div className=' footer-bg text-white'>
+    <div className=' bg-[#1c1b1b] text-white'>
       <div className='container mx-auto py-10 flex gap-10 justify-between'>
         <div className='w-96'>
           <h1 className='text-xl pb-5'>FlavorFolio</h1>
