@@ -1,23 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdFavorite } from "react-icons/md";
+import { BiSearch } from "react-icons/bi";
+import UserAvatar from './UserAvatar';
 
 function Navbar() {
+    const [defaultImage, setDefaultImage] = useState(false)
+    const handleImageError = () => {
+        setDefaultImage(true)
+    }
+
     return (
-        <div className='py-5 border-b'>
+        <div className='py-4 bg-[#98fb98]'>
             <div className='container mx-auto'>
-                <ul className='flex justify-between items-center'>
-                    <li className='text-xl text-black'>
+                <div className='flex justify-between items-center'>
+                    <p className='text-xl text-[#1c1b1b] font-semibold'>
                         <Link to='/'>FlavorFolio</Link>
-                    </li>
+                    </p>
+                    <div>
+                        <Link to='/'>
+                            <div className='flex relative items-center'>
+                                <form>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        placeholder='Search'
+                                        className='bg-[#98fb98] outline-none border-b w-96
+                                        border-[#1c1b1b] placeholder:text-[#1c1b10a7]' />
+                                </form>
+                                <span className=' absolute right-0'><BiSearch /></span>
+                            </div>
+                        </Link>
+                    </div>
                     <ul className='flex gap-10 items-center'>
-                        <li className='text-xl relative flex'>
-                            <MdFavorite />
-                            <span className=' absolute -top-3 -right-2 text-sm'>0</span>
+                        <li>
+                            <Link to='/'>
+                                <span className='text-xl relative flex'>
+                                    <MdFavorite />
+                                    <span className='absolute -top-3 -right-2 text-sm'>0</span>
+                                </span>
+                            </Link>
                         </li>
                         <li><Link to='/login'>Login/Register</Link></li>
+                        <li>
+                            <img src=""
+                                alt="User Image"
+                                onError={handleImageError}
+                                className={defaultImage ? 'hidden' : 'rounded-full w-8 h-8'} />
+                            {
+                                defaultImage && <UserAvatar />
+                            }
+                        </li>
                     </ul>
-                </ul>
+                </div>
             </div>
         </div>
     )

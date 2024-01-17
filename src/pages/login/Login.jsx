@@ -19,7 +19,7 @@ function Login() {
             <hr className='my-20' />
             <div>
                 <p className='text-center'>Already have an account?
-                    <span className='underline'> Register</span>
+                    <span className='underline'>Register</span>
                 </p>
             </div>
         </div>
