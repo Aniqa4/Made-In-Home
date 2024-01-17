@@ -7,7 +7,7 @@ function Layout() {
     return (
         <div>
             <Navbar />
-            <div className='container mx-auto pt-10 pb-20 text-[#1c1b1b]'>
+            <div className='pb-20 text-[#1c1b1b]'>
                 <Outlet />
             </div>
             <Footer />

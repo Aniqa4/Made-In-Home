@@ -2,13 +2,19 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div>
-      <p className=' bg-purple-50 p-5 text-center'>
-        Discover a world of convenience at our versatile online tool hub.
-        From creating to-do lists and quick calculations to managing time
-        with a stopwatch and capturing thoughts in notes – our platform is designed to streamline your tasks effortlessly.
-        Simplify your routine and enhance productivity with our user-friendly tools.
-        Experience efficiency like never before!
+    <div className='relative'>
+      <img src={`${import.meta.env.VITE_Banner_Image}`}
+        alt="banner"
+        className='w-full opacity-70' />
+      <p className=' absolute top-1/3 px-20 text-center text-xl text-black'>
+        Welcome to MadeInHome, your haven for all things handmade and heartcrafted.
+        Explore a world of creativity within the comfort of your home, where we share
+        inspiring ideas and practical tips on cooking, crafting, painting, sewing,
+        and gardening. Join us on a journey of turning everyday moments into extraordinary
+        creations, bringing warmth, charm, and a touch of homemade magic to every aspect
+        of your life. Embrace the joy of crafting your own unique story,
+        one homemade masterpiece at a time. Let's make, create, and cultivate together,
+        right from the heart of home.
       </p>
     </div>
   )

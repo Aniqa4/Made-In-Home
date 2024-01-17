@@ -11,11 +11,11 @@ function Navbar() {
     }
 
     return (
-        <div className='py-4 bg-[#98fb98]'>
+        <div className='py-4'>
             <div className='container mx-auto'>
                 <div className='flex justify-between items-center'>
                     <p className='text-xl text-[#1c1b1b] font-semibold'>
-                        <Link to='/'>FlavorFolio</Link>
+                        <Link to='/'>MadeInHome</Link>
                     </p>
                     <div>
                         <Link to='/'>
@@ -25,7 +25,7 @@ function Navbar() {
                                         type="text"
                                         name=""
                                         placeholder='Search'
-                                        className='bg-[#98fb98] outline-none border-b w-96
+                                        className='outline-none border-b lg:w-96
                                         border-[#1c1b1b] placeholder:text-[#1c1b10a7]' />
                                 </form>
                                 <span className=' absolute right-0'><BiSearch /></span>
