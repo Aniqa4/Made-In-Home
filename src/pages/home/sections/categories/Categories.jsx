@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Title from '../../../components/Title'
-import { Link, Outlet, useLoaderData, useParams } from 'react-router-dom'
-import ActiveRoute from '../../../components/ActiveRoute';
+import Title from '../../../../components/Title'
+import { Outlet } from 'react-router-dom'
+import ActiveRoute from '../../../../components/ActiveRoute';
 
 function Categories() {
     return (
-        <div>
+        <div id='categories'>
             <Title title={'Explore Blogs By Category'} />
             <div className='flex pb-5 gap-5'>
                 <ActiveRoute to={'/'}>

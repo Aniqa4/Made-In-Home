@@ -14,9 +14,7 @@ function BlogCard() {
                 {
                     show &&
                     <div className='absolute top-[40%] right-[40%]'>
-                        <button className='text-center rounded px-3 py-1
-                         text-white bg-[#1c1b1b]'>Read
-                        </button>
+                        <p className=' text-xl font-semibold'>Read</p>
                     </div>
                 }
             </div>
