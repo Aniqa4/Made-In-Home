@@ -16,7 +16,7 @@ function BlogCard() {
                 <div className='relative'
                     onMouseMove={() => setShow(true)}
                     onMouseLeave={() => setShow(false)}>
-                    <img src="https://www.lightstalking.com/wp-content/uploads/backlit-beach-color-258109-3-1024x576.jpg"
+                    <img src="https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"
                         alt="blogTitle"
                         className={show ? 'opacity-70 rounded-xl' : ' rounded-xl'} />
                     {

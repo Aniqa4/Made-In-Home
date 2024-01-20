@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 
-function PopularBlogs() {
+function FavoriteBlogs() {
     const blogs = Array(15).fill(null)
     return (
         <div>
-            <Title title={'Popular Now'} />
+            <Title title={'Favorites'} />
             <Swiper
                 modules={[EffectFade, Autoplay]}
                 slidesPerView={1.2}
@@ -47,7 +47,7 @@ function PopularBlogs() {
                 }
             </Swiper>
         </div>
-    )
+  )
 }
 
-export default PopularBlogs
+export default FavoriteBlogs
