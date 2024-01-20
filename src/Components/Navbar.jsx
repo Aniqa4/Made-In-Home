@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { MdFavorite } from "react-icons/md";
+import { HiOutlineSaveAs } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import UserAvatar from './UserAvatar';
 
 function Navbar() {
     const [defaultImage, setDefaultImage] = useState(false)
-    const handleImageError = () => {
-        setDefaultImage(true)
-    }
 
     return (
         <div className='py-4 shadow'>
@@ -36,7 +33,7 @@ function Navbar() {
                         <li>
                             <Link to='/'>
                                 <span className='text-xl relative flex'>
-                                    <MdFavorite />
+                                    <HiOutlineSaveAs />
                                     <span className='absolute -top-3 -right-2 text-sm'>0</span>
                                 </span>
                             </Link>
@@ -45,7 +42,7 @@ function Navbar() {
                         <li>
                             <img src=""
                                 alt="User Image"
-                                onError={handleImageError}
+                                onError={() => setDefaultImage(true)}
                                 className={defaultImage ? 'hidden' : 'rounded-full w-8 h-8'} />
                             {
                                 defaultImage && <UserAvatar />
