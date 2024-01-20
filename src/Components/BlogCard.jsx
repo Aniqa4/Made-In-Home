@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import UserAvatar from './UserAvatar';
+import { TiEye } from "react-icons/ti";
+import { BsDot } from "react-icons/bs";
 
 function BlogCard() {
     const [show, setShow] = useState(false)
@@ -25,8 +27,11 @@ function BlogCard() {
                     }
                     <p className='absolute left-0 bottom-0 right-0 bg-black rounded-b-xl bg-opacity-20 text-white
                     flex justify-end items-baseline p-2'>
-                        <span className='hidden'><MdFavorite /></span>
-                        <span className=' hover:text-black'><MdFavoriteBorder /></span>
+                        <div className='flex items-center gap-3 text-xs'>
+                            <p className='flex gap-1 items-center'><TiEye /> 1M</p>
+                            <BsDot />
+                            <p className='flex gap-1 items-center'><MdFavorite /> 1K</p>
+                        </div>
                     </p>
                 </div>
                 <div className='grid grid-cols-1 gap-1 py-3'>
