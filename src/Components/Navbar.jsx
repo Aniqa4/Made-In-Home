@@ -11,7 +11,7 @@ function Navbar() {
     }
 
     return (
-        <div className='py-4'>
+        <div className='py-4 shadow'>
             <div className='container mx-auto'>
                 <div className='flex justify-between items-center'>
                     <p className='text-xl text-[#1c1b1b] font-semibold'>

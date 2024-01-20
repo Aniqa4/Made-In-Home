@@ -8,7 +8,7 @@ function BlogCard() {
             <div className='relative'
                 onMouseMove={() => setShow(true)}
                 onMouseLeave={() => setShow(false)}>
-                <img src="https://assets.bonappetit.com/photos/5e7a6c79edf206000862e452/1:1/w_1519,h_1519,c_limit/Cooking-Home-Collection.jpg"
+                <img src="https://www.lightstalking.com/wp-content/uploads/backlit-beach-color-258109-3-1024x576.jpg"
                     alt="blogTitle"
                     className={show ? 'opacity-70 rounded-xl' : ' rounded-xl'} />
                 {
@@ -18,11 +18,10 @@ function BlogCard() {
                     </div>
                 }
             </div>
-            <div className='grid grid-cols-1 gap-2 pt-5'>
+            <div className='grid grid-cols-1 gap-1 pt-3'>
                 <h1 className='font-semibold'>Blog Title</h1>
                 <p>Posted By : User Name</p>
                 <p>Category : Cooking</p>
-                <p className='bg-[#1c1b1b] text-white text-center rounded py-1'>Read</p>
                 <p className='bg-[#1c1b1b] text-white text-center rounded py-1'>Save</p>
             </div>
         </div>

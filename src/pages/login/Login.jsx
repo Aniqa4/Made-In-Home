@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../../components/Title'
+import PageTitle from '../../components/PageTitle'
 
 function Login() {
     return (
         <div className=' min-h-screen'>
-            <Title title={'Login'} />
+            <PageTitle title={'Login'} />
             <form action=""
                 className=' w-1/2 mx-auto grid grid-cols-1 gap-5'>
                 <input type="text"
