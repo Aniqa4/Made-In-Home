@@ -3,6 +3,7 @@ import UserAvatar from '../../components/UserAvatar'
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { TiEye } from "react-icons/ti";
 import { BsDot } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 function BlogDetails() {
     const [defaultImage, setDefaultImage] = useState(false)
@@ -12,16 +13,18 @@ function BlogDetails() {
             <div className='grid grid-cols-2 gap-10'>
                 <div>
                     <p className=' text-3xl font-semibold'>Title of the Blog</p>
-                    <div className='flex items-center gap-2 py-5'>
-                        <img src=""
-                            alt="User Image"
-                            onError={() => setDefaultImage(true)}
-                            className={defaultImage ? 'hidden' : 'rounded-full w-8 h-8'} />
-                        {
-                            defaultImage && <UserAvatar />
-                        }
-                        <p className='font-semibold cursor-pointer'>Name of the writer</p>
-                    </div>
+                    <Link to='/user'>
+                        <div className='flex items-center gap-2 py-5'>
+                            <img src=""
+                                alt="User Image"
+                                onError={() => setDefaultImage(true)}
+                                className={defaultImage ? 'hidden' : 'rounded-full w-8 h-8'} />
+                            {
+                                defaultImage && <UserAvatar />
+                            }
+                            <p className='font-semibold cursor-pointer'>Name of the writer</p>
+                        </div>
+                    </Link>
                     <p>Category: Name of the Category</p>
                     <p>Posted on: 20th January 2024</p>
                     <div className='flex items-center gap-5 py-5'>

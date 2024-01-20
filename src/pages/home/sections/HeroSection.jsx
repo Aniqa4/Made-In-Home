@@ -17,7 +17,7 @@ function HeroSection() {
         one homemade masterpiece at a time. Let's make, create, and cultivate together,
         right from the heart of home.
         <Link to='explore' smooth={true} duration={500}>
-          <p className=' border rounded-xl py-1 mx-auto my-10 w-80 shadow-xl hover:bg-gray-100 bg-white'> Explore All</p>
+          <p className=' border rounded-xl py-1 mx-auto my-10 w-80 shadow-xl hover:bg-gray-100 bg-white'> Explore Blogs</p>
         </Link>
       </div>
     </div>

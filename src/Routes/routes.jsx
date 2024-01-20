@@ -5,7 +5,8 @@ import Login from "../pages/login/Login";
 import Painting from "../pages/home/sections/categories/Painting";
 import Cooking from "../pages/home/sections/categories/Cooking";
 import AllCategories from "../pages/home/sections/categories/AllCategories";
-import BlogDetails from "../pages/BlogDetails/BlogDetails";
+import BlogDetails from "../pages/blogDetails/BlogDetails";
+import UserProfile from "../pages/userProfile/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <BlogDetails />
+            },
+            {
+                path: '/user',
+                element: <UserProfile />
             }
         ]
     }
