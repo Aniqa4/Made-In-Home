@@ -8,7 +8,7 @@ function Navbar() {
     const [defaultImage, setDefaultImage] = useState(false)
 
     return (
-        <div className='py-4 shadow'>
+        <div className='py-4'>
             <div className='container mx-auto'>
                 <div className='flex justify-between items-center'>
                     <p className='text-xl text-[#1c1b1b] font-semibold'>
@@ -22,7 +22,7 @@ function Navbar() {
                                         type="text"
                                         name=""
                                         placeholder='Search'
-                                        className='outline-none border-b lg:w-96
+                                        className='outline-none border-b lg:w-96 bg-transparent
                                         border-[#1c1b1b] placeholder:text-[#1c1b10a7]' />
                                 </form>
                                 <span className=' absolute right-0'><BiSearch /></span>
