@@ -28,7 +28,8 @@ function Home() {
 
   return (
     <div>
-      <div className={scrolling?' fixed left-0 right-0 top-0 z-20 bg-[#ffffffd8] ':' fixed left-0 right-0 top-0 z-20 '}>
+      <div className={scrolling ? ' fixed left-0 right-0 top-0 z-20 bg-[#ffffffd8] shadow' :
+        ' fixed left-0 right-0 top-0 z-20'}>
         <Navbar />
       </div>
       <HeroSection />
