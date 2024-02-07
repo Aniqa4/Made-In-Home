@@ -25,15 +25,15 @@ function PopularBlogs() {
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 3.2,
+                        slidesPerView: 2.2,
                         spaceBetween: 10,
                     },
                     1201: {
-                        slidesPerView: 5.2,
+                        slidesPerView: 4.2,
                         spaceBetween: 10,
                     },
                     1921: {
-                        slidesPerView: 6.2,
+                        slidesPerView: 4.2,
                         spaceBetween: 10,
                     }
                 }}

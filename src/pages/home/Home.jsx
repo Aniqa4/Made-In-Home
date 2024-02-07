@@ -35,7 +35,7 @@ function Home() {
       <HeroSection />
       <div className='container lg:mx-auto md:mx-5'>
         <PopularBlogs />
-        <FavoriteBlogs />
+      {/*   <FavoriteBlogs /> */}
         <Categories />
       </div>
     </div>

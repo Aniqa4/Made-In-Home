@@ -7,8 +7,8 @@ function HeroSection() {
       <img src={`${import.meta.env.VITE_Banner_Image}`}
         alt="banner"
         className='w-full opacity-70' />
-      <div className=' absolute top-1/3 px-[20%] left-0 right-0 text-2xl font-ProtestStrike'>
-        <div className=' grid justify-center text-center '>
+      <div className=' absolute top-1/3 px-[20%] left-0 right-0 text-2xl'>
+        <div className=' grid justify-center text-center font-ProtestStrike'>
           <TypeAnimation
             preRenderFirstString={true}
             sequence={[1000, 'Welcome to MadeInHome', 1000, 'Welcome to']}

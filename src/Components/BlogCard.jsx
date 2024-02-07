@@ -34,8 +34,10 @@ function BlogCard() {
                         </div>
                     </p>
                 </div>
-                <div className='grid grid-cols-1 gap-1 py-3'>
-                    <h1 className='font-semibold text-xl'>Blog Title</h1>
+                <div className='grid grid-cols-1 gap-5 py-3'>
+                    <h1 className='text-xl grid font-ProtestStrike'>How to cook chicken momos and sauce at home!
+                        <span className='text-xs'>20th January 2024</span>
+                    </h1>
                     <div className='flex items-center gap-2'>
                         <img src=""
                             alt="User Image"
@@ -46,7 +48,10 @@ function BlogCard() {
                         }
                         <p className='font-semibold cursor-pointer'>Name of the writer</p>
                     </div>
-                    <p>Posted on: 20th January 2024</p>
+                    <p className=' font-semibold'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem animi sequi reiciendis rem incidunt facere, officiis quis aperiam illo,
+                        doloribus blanditiis voluptas ad pariatur.
+                        Aliquam nemo enim voluptates dignissimos atque.</p>
                 </div>
             </div>
         </Link>

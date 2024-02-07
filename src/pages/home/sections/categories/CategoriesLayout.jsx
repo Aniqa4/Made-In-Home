@@ -6,8 +6,8 @@ import ActiveRoute from '../../../../components/ActiveRoute';
 function Categories() {
     return (
         <div id='explore'>
-            <Title title={'Explore'} />
-            <div className='flex pb-5 gap-5'>
+            <Title title={'Explore More'} />
+            <div className='flex pb-5'>
                 <ActiveRoute to={'/'}>
                     All
                 </ActiveRoute>
