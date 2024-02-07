@@ -27,7 +27,7 @@ function BlogDetails() {
                                 {
                                     defaultImage && <UserAvatar />
                                 }
-                                <p className='font-semibold cursor-pointer'>Name of the writer</p>
+                                <p className='font-semibold cursor-pointer hover:text-blue-400'>Name of the writer</p>
                             </div>
                         </Link>
                         <p>Category: Name of the Category</p>
