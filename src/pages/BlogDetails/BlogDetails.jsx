@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import UserAvatar from '../../components/UserAvatar'
-import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
+import { MdFavorite } from "react-icons/md";
 import { TiEye } from "react-icons/ti";
 import { BsDot } from "react-icons/bs";
 import { Link } from 'react-router-dom';
