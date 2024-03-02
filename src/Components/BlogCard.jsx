@@ -38,16 +38,18 @@ function BlogCard() {
                     <h1 className='text-xl grid font-ProtestStrike'>How to cook chicken momos and sauce at home!
                         <span className='text-xs'>20th January 2024</span>
                     </h1>
-                    <div className='flex items-center gap-2'>
-                        <img src=""
-                            alt="User Image"
-                            onError={() => setDefaultImage(true)}
-                            className={defaultImage ? 'hidden' : 'rounded-full w-10 h-10'} />
-                        {
-                            defaultImage && <UserAvatar />
-                        }
-                        <p className='font-semibold cursor-pointer'>Name of the writer</p>
-                    </div>
+                    <Link to={'/user'}>
+                        <div className='flex items-center gap-2'>
+                            <img src=""
+                                alt="User Image"
+                                onError={() => setDefaultImage(true)}
+                                className={defaultImage ? 'hidden' : 'rounded-full w-10 h-10'} />
+                            {
+                                defaultImage && <UserAvatar />
+                            }
+                            <p className='font-semibold cursor-pointer'>Name of the writer</p>
+                        </div>
+                    </Link>
                     <p className=' font-semibold'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Exercitationem animi sequi reiciendis rem incidunt facere, officiis quis aperiam illo,
                         doloribus blanditiis voluptas ad pariatur.

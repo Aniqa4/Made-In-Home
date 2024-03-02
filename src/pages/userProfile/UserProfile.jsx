@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import BlogCard from '../../components/BlogCard'
+import Following from './Following'
 
 function UserProfile() {
   return (
@@ -21,7 +22,7 @@ function UserProfile() {
           <p className='text-xl font-semibold'>Name</p>
           <div className='flex items-center gap-5'>
             <p>100 Followers</p>
-            <p>100 Following</p>
+            <Following/>
             <button className='bg-[#1c1b1b] text-white px-5 rounded py-1'>Follow</button>
             <button className='bg-[#1c1b1b] text-white px-5 rounded py-1'>Message</button>
           </div>
