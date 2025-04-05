@@ -1,5 +1,3 @@
-
-
 function Footer() {
   return (
     <div className=" bg-[#1c1b1b] text-white">

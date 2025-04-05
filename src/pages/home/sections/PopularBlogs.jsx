@@ -1,26 +1,16 @@
-import { useEffect, useState } from "react";
 import Title from "../../../components/Title";
 import BlogCard from "../../../components/BlogCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
-import axios from "axios";
+import FetchData from "../../../api/fetchData";
 
 function PopularBlogs() {
-  const [blogs, setBlogs] = useState([]);
+  const { data: blogs, loading } = FetchData("blogs");
 
-  useEffect(() => {
-    axios
-      .get(`${import.meta.env.VITE_API_BASE_URL}/blogs`)
-      .then((response) => {
-        setBlogs(response.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-  console.log(blogs);
+  if (loading) {
+    <div>loading...</div>;
+  }
 
   return (
     <div>
@@ -56,6 +46,8 @@ function PopularBlogs() {
         {blogs.map((x, index) => (
           <SwiperSlide key={index}>
             <BlogCard
+              key={index}
+              id={x.id}
               blogTitle={x.blogTitle}
               nameOfWriter={x.nameOfWriter}
               description={x.description}

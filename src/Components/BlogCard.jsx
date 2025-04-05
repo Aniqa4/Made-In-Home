@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdFavorite } from "react-icons/md";
@@ -6,12 +5,12 @@ import UserAvatar from "./UserAvatar";
 import { TiEye } from "react-icons/ti";
 import { BsDot } from "react-icons/bs";
 
-function BlogCard({ blogTitle, nameOfWriter, description }) {
+function BlogCard({ blogTitle, nameOfWriter, description,id }) {
   const [show, setShow] = useState(false);
   const [defaultImage, setDefaultImage] = useState(false);
 
   return (
-    <Link to="/blog">
+    <Link to={`/blog/${id}`}>
       <div className="">
         <div
           className="relative"
