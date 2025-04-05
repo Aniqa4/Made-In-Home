@@ -1,21 +1,22 @@
-import React from 'react'
-import BlogCard from '../../../../components/BlogCard'
+import BlogCard from "../../../../components/BlogCard";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
-
 function Cooking() {
-    return (
-        <div>
-            <div className='grid grid-cols-6 gap-5'>
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-            </div>
-            <p className='pt-10 cursor-pointer flex justify-center items-center gap-3'>View More
-                <span className=' animate-pulse'><FaLongArrowAltLeft /></span>
-            </p>
-        </div>
-    )
+  return (
+    <div>
+      <div className="grid grid-cols-6 gap-5">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
+      <p className="pt-10 cursor-pointer flex justify-center items-center gap-3">
+        View More
+        <span className=" animate-pulse">
+          <FaLongArrowAltLeft />
+        </span>
+      </p>
+    </div>
+  );
 }
 
-export default Cooking
+export default Cooking;

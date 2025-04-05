@@ -1,9 +1,9 @@
-import React from 'react'
-
-function Title({title}) {
+function Title({ title }) {
   return (
-    <div className=' text-center font-ProtestStrike py-10 text-xl font-extralight'>{title}</div>
-  )
+    <div className=" text-center font-ProtestStrike py-10 text-xl font-extralight">
+      {title}
+    </div>
+  );
 }
 
-export default Title
+export default Title;
