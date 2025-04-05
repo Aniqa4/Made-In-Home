@@ -1,13 +1,12 @@
-
 import Title from "../../../../components/Title";
 import { Outlet } from "react-router-dom";
 import ActiveRoute from "../../../../components/ActiveRoute";
 
 function Categories() {
   return (
-    <div id="explore">
+    <div>
       <Title title={"Explore More"} />
-      <div className="flex pb-5">
+      <div className="flex pb-5 gap-3">
         <ActiveRoute to={"/"}>All</ActiveRoute>
         <ActiveRoute to={"/cooking"}>Cooking</ActiveRoute>
         <ActiveRoute to={"/painting"}>Painting</ActiveRoute>

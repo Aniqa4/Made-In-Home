@@ -1,7 +1,7 @@
-
 import Navbar from "../../components/Navbar";
 import BlogCard from "../../components/BlogCard";
 import Following from "./Following";
+import Avatar from '../../assets/user.jpg'
 
 function UserProfile() {
   return (
@@ -11,16 +11,13 @@ function UserProfile() {
       </div>
       <div className="py-16">
         <div className="relative">
-          <img
-            src="https://www.lightstalking.com/wp-content/uploads/backlit-beach-color-258109-3-1024x576.jpg"
-            alt="cover photo"
-            className=" w-full h-96 rounded-b-xl"
-          />
+          <div className="w-full h-96 rounded-b-xl bg-[#8b91c3]">
+          </div>
           <div className=" absolute left-10 -bottom-[25%]">
             <img
-              src="https://instacaptionsforall.in/wp-content/uploads/2023/12/converted_52-1024x1024.jpg"
+              src={Avatar}
               alt="dp"
-              className=" w-48 rounded-full"
+              className=" w-48 h-48 rounded-full"
             />
           </div>
         </div>

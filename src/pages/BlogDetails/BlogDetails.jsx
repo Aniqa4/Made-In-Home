@@ -6,11 +6,12 @@ import { BsDot } from "react-icons/bs";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import FetchData from "../../api/fetchData";
+import { HiOutlineSaveAs } from "react-icons/hi";
 
 function BlogDetails() {
   const [defaultImage, setDefaultImage] = useState(false);
   const params = useParams();
-  const { data: blogDetails } = FetchData(`blogs/${params.id}`);
+  const { data: blogDetails } = FetchData(`blogs/${params?.id}`);
 
   return (
     <div className="container mx-auto pt-10">
@@ -20,7 +21,7 @@ function BlogDetails() {
       <div className="pt-16">
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <p className=" text-3xl font-semibold">{blogDetails.blogTitle}</p>
+            <p className=" text-3xl font-semibold">{blogDetails?.blogTitle}</p>
             <Link to="/user">
               <div className="flex items-center gap-2 py-5">
                 <img
@@ -35,8 +36,13 @@ function BlogDetails() {
                 </p>
               </div>
             </Link>
-            <p>Category: {blogDetails.categoryName}</p>
-            <p>Posted on: 20th January 2024</p>
+            <p>
+              Category:{" "}
+              <span className=" font-medium">{blogDetails?.categoryName}</span>
+            </p>
+            <p>
+              Posted on: <span className=" font-medium"> 20th January 2024</span>
+            </p>
             <div className="flex items-center gap-5 py-5">
               <p className="flex gap-1 items-center">
                 <TiEye /> {blogDetails.views}
@@ -44,6 +50,10 @@ function BlogDetails() {
               <BsDot />
               <p className="flex gap-1 items-center">
                 <MdFavorite /> {blogDetails.likes}
+              </p>
+              <BsDot />
+              <p className="flex gap-1 items-center">
+                <HiOutlineSaveAs /> {blogDetails.saved}
               </p>
             </div>
             <div className="flex gap-3">
@@ -69,16 +79,14 @@ function BlogDetails() {
         <div className="py-10 flex gap-10 ">
           <div className="border rounded-xl p-10">
             <p className="font-semibold text-xl">Ingredients</p>
-            <ol className=" list-inside list-disc">
-              <li>Suger</li>
-              <li>Suger</li>
-              <li>Suger</li>
-              <li>Suger</li>
-              <li>Suger</li>
+            <ol className=" list-inside list-disc py-3">
+              {blogDetails?.ingredients?.map((x, index) => (
+                <li key={index}>{x}</li>
+              ))}
             </ol>
           </div>
-          <div className="border rounded-xl p-10">
-            <h1 className=" text-xl font-semibold">Description:</h1>
+          <div className="border rounded-xl p-10 w-full">
+            <h1 className=" text-xl font-semibold pb-3">Recipe:</h1>
             <p className=" text-justify">{blogDetails.description}</p>
           </div>
         </div>
