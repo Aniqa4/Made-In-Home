@@ -19,8 +19,8 @@ function HeroSection() {
           <p>
             {" "}
             Explore cooking, crafting, painting, sewing, and gardening with us.
-            Let&apos;s create unique stories and homemade magic together, right
-            from home.
+            Let&apos;s create unique stories and homemade magic together, right from
+            home.
           </p>
         </div>
       </div>

@@ -1,11 +1,12 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
+import { MdFavorite } from "react-icons/md";
 import UserAvatar from "./UserAvatar";
 import { TiEye } from "react-icons/ti";
 import { BsDot } from "react-icons/bs";
 
-function BlogCard() {
+function BlogCard({ blogTitle, nameOfWriter, description }) {
   const [show, setShow] = useState(false);
   const [defaultImage, setDefaultImage] = useState(false);
 
@@ -44,7 +45,7 @@ function BlogCard() {
         </div>
         <div className="grid grid-cols-1 gap-5 py-3">
           <h1 className="text-xl grid font-ProtestStrike">
-            How to cook chicken momos and sauce at home!
+            {blogTitle}
             <span className="text-xs">20th January 2024</span>
           </h1>
           <Link to={"/user"}>
@@ -56,15 +57,10 @@ function BlogCard() {
                 className={defaultImage ? "hidden" : "rounded-full w-10 h-10"}
               />
               {defaultImage && <UserAvatar />}
-              <p className="font-semibold cursor-pointer">Name of the writer</p>
+              <p className="font-semibold cursor-pointer">{nameOfWriter}</p>
             </div>
           </Link>
-          <p className=" font-semibold">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem animi sequi reiciendis rem incidunt facere, officiis
-            quis aperiam illo, doloribus blanditiis voluptas ad pariatur.
-            Aliquam nemo enim voluptates dignissimos atque.
-          </p>
+          <p className=" font-semibold">{description}</p>
         </div>
       </div>
     </Link>

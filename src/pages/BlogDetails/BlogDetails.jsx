@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import UserAvatar from "../../components/UserAvatar";
 import { MdFavorite } from "react-icons/md";
 import { TiEye } from "react-icons/ti";

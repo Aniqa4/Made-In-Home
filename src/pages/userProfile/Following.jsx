@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./modalStyle.css";
 import { IoMdClose } from "react-icons/io";
 
