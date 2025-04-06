@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "./modalStyle.css";
+import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
 function Following() {
@@ -10,7 +9,7 @@ function Following() {
       {open && (
         <div
           onClick={() => setOpen(false)}
-          className="modal fixed inset-0 flex justify-center items-center z-10 overflow-hidden"
+          className="bg-[#a0a0a09b] fixed inset-0 flex justify-center items-center z-10 overflow-hidden"
         >
           <div
             onClick={() => setOpen(true)}
@@ -21,9 +20,8 @@ function Following() {
             <p>Aniqa</p>
             <p>Aniqa</p>
             <p
-              onClick={() => setOpen(false)}
               className=" absolute -top-3 -right-3 bg-red-800 
-                            w-7 h-7 rounded-full flex items-center justify-center text-white"
+                w-7 h-7 rounded-full flex items-center justify-center text-white"
             >
               <IoMdClose />
             </p>

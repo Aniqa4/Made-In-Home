@@ -45,13 +45,15 @@ function Navbar() {
               <Link to="/login">Login/Register</Link>
             </li>
             <li>
-              <img
-                src=""
-                alt="User Image"
-                onError={() => setDefaultImage(true)}
-                className={defaultImage ? "hidden" : "rounded-full w-8 h-8"}
-              />
-              {defaultImage && <UserAvatar />}
+              <Link to={'/user'}>
+                <img
+                  src=""
+                  alt="User Image"
+                  onError={() => setDefaultImage(true)}
+                  className={defaultImage ? "hidden" : "rounded-full w-8 h-8"}
+                />
+                {defaultImage && <UserAvatar />}
+              </Link>
             </li>
           </ul>
         </div>

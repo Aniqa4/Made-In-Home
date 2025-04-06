@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar";
 import BlogCard from "../../components/BlogCard";
-import Following from "./Following";
-import Avatar from '../../assets/user.jpg'
+import Avatar from "../../assets/user.jpg";
+import AddBlog from "./AddBlog";
 
 function UserProfile() {
   return (
@@ -11,21 +11,17 @@ function UserProfile() {
       </div>
       <div className="py-16">
         <div className="relative">
-          <div className="w-full h-96 rounded-b-xl bg-[#8b91c3]">
-          </div>
+          <div className="w-full h-96 rounded-b-xl bg-[#8b91c3]"></div>
           <div className=" absolute left-10 -bottom-[25%]">
-            <img
-              src={Avatar}
-              alt="dp"
-              className=" w-48 h-48 rounded-full"
-            />
+            <img src={Avatar} alt="dp" className=" w-48 h-48 rounded-full" />
           </div>
         </div>
         <div className="ps-60 py-5 flex justify-between">
           <p className="text-xl font-semibold">Name</p>
           <div className="flex items-center gap-5">
+            <AddBlog />
             <p>100 Followers</p>
-            <Following />
+            <p>100 Following</p>
             <button className="bg-[#1c1b1b] text-white px-5 rounded py-1">
               Follow
             </button>
