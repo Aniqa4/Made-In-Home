@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import FetchData from "../../api/fetchData";
 import { HiOutlineSaveAs } from "react-icons/hi";
+import EditBlog from "./EditBlog";
 
 function BlogDetails() {
   const [defaultImage, setDefaultImage] = useState(false);
@@ -37,11 +38,12 @@ function BlogDetails() {
               </div>
             </Link>
             <p>
-              Category:{" "}
-              <span className=" font-medium">{blogDetails?.categoryName}</span>
+              Category:
+              <span className=" font-medium"> {blogDetails?.categoryName}</span>
             </p>
             <p>
-              Posted on: <span className=" font-medium"> 20th January 2024</span>
+              Posted on:{" "}
+              <span className=" font-medium"> 20th January 2024</span>
             </p>
             <div className="flex items-center gap-5 py-5">
               <p className="flex gap-1 items-center">
@@ -57,18 +59,22 @@ function BlogDetails() {
               </p>
             </div>
             <div className="flex gap-3">
-              <p className="border border-[#1c1b1b] text-center rounded py-1 px-5">
+              <button className="border border-[#1c1b1b] text-center rounded py-1 px-5">
                 Like
-              </p>
+              </button>
               {/*     <p className='border bg-[#1c1b1b] text-white text-center rounded py-1 px-5'>Liked</p> */}
-              <p className="border border-[#1c1b1b] text-center rounded py-1 px-5">
+              <button className="border border-[#1c1b1b] text-center rounded py-1 px-5">
                 Save
-              </p>
+              </button>
               {/*    <p className='border bg-[#1c1b1b] text-white text-center rounded py-1 px-5'>Saved</p> */}
-              <p className="border border-[#1c1b1b] text-center rounded py-1 px-5">
+              <button className="border border-[#1c1b1b] text-center rounded py-1 px-5">
                 Share
-              </p>
+              </button>
               {/*     <p className='border bg-[#1c1b1b] text-white text-center rounded py-1 px-5'>Shared</p> */}
+              <EditBlog />
+              <button className="border border-[#1c1b1b] text-center rounded py-1 px-5">
+                Delete
+              </button>
             </div>
           </div>
           <img
